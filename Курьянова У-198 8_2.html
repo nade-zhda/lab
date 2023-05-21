@@ -1,0 +1,15 @@
+<button id="but">Кнопка</button>
+<h1>Заголовок 1 уровня</h1>
+<h2>Заголовок 2 уровня</h2>
+<h2>Заголовок 2 уровня</h2>
+<h3>Заголовок 3 уровня</h3>
+ 
+<script type="text/javascript">
+but.onclick = function() {
+  const text = prompt('Введите текст');
+  document.querySelectorAll('h2').forEach(header => {
+    header.innerText = text;
+    header.style.border = '1px solid black'
+  });
+}
+</script>

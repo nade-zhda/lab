@@ -1,0 +1,49 @@
+<head>
+<script>
+
+function weekday()
+{
+st=prompt('vvedite nomer den nedeli');
+n=parseInt(st);
+
+cp=n;
+g1='<head><style>body {background-color:';
+g3='}h3{color:';
+g5='}</style></head>';
+
+s1='<body><h3>'+n
+s3='</h3></body>'
+
+if(cp>=1 && cp<=5)
+{
+	s2=' rabochiy den'; g2='red'; g4='black'
+}
+else
+{
+if(cp>=6 && cp<=7)
+{
+	s2=' vyhodnoy den'; g2='blue'; g4='green'
+} 
+else 
+{
+s2=' error'; g2='black'; g4='red'
+}
+}
+
+g=g1+g2+g3+g4+g5;
+s=s1+s2+s3;
+w=window.open('','','width=200,height=20');
+w.document.open();
+w.document.write(g);
+w.document.write(s);
+w.document.close();
+}
+</script>
+</head>
+
+<body>
+
+<input type='button' value='start' onclick='weekday()'>
+<input type='button' value='close' onclick='w.close();'>
+
+</body>

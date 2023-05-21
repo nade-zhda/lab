@@ -1,0 +1,20 @@
+<head>
+<title> Периметр прямоугольника </title>
+<script language= "JavaScript">
+function per(){
+var a=+document.form1.num1.value
+var b=+document.form1.num2.value
+var s=(a+b)*2
+document.form1.res.value=s
+}
+</script>
+</head>
+<body>
+<form name="form1">
+1 storona: <input type="text" size=5 name="num1"> <hr> 
+2 storona: <input type="text" size=5 name="num2"> <hr>
+perimetr: <input type="text" size=5 name="res"> <hr>
+<input type="button" name="button" value=naity onclick="per()">
+<input type="reset" value=obnovit>
+</form>
+</body>

@@ -1,0 +1,33 @@
+<body>
+
+<script>
+
+var y;
+
+
+arr= new Array(10); 
+a=' ';
+
+for (var i=0; i<arr.length; i++)
+
+{
+
+y=Math.random()*10+10;
+
+arr[i]= Math.floor(y);
+a=a+' '+arr[i];
+}
+
+for (var i=0; i<arr.length; i++)
+
+{
+ost = arr[i];
+if (ost%5==0)
+{
+a=a+' '+i;
+}
+}
+
+alert(a);
+</script>
+</body>

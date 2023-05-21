@@ -1,0 +1,19 @@
+<body>
+<script>
+var z;		
+str=prompt("Vvedite x:");
+x=parseInt(str);
+
+str=prompt("Vvedite y:");
+y=parseInt(str);
+if (x-y==0) {alert("0 v znamenatele, vvedite drugie znacheniya");
+str=prompt("Vvedite x:");
+x=parseInt(str);
+
+str=prompt("Vvedite y:");
+y=parseInt(str);	}
+z=((x*y)/(x-y))+ Math.sqrt(Math.abs(Math.pow(y,3)-x));
+
+alert(z);
+</script>
+</body>

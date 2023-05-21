@@ -1,0 +1,21 @@
+<html>
+<body style="background-color: yellow">
+<input id="change_color" type="submit" value="розовый" onclick="change_color()">
+<script>
+function change_color()
+{
+    var color = document.body.style.backgroundColor;
+    if(color == "yellow")
+    {
+        document.body.style.backgroundColor = "pink";
+        document.getElementById("change_color").value = "желтый";
+    }
+    else
+    {
+        document.body.style.backgroundColor = "yellow";
+        document.getElementById("change_color").value = "розовый";
+    }
+}
+</script>
+</body>
+</html>

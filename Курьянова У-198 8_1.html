@@ -1,0 +1,27 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <p class="r">Текст</p>
+    <p class="r">Текст</p>
+    <p class="r">Текст</p>
+    <input type="button" id="btn">
+    <script>
+        let btn = document.getElementById("btn");
+        let elems = document.getElementsByClassName("r");
+        let index = 0; // Индекс для массива параметров
+        let params = [["12", "Крупный"], ["20", "Мелкий"]];
+        changeSize(); // В первый раз установить размер шрифта и надпись 
+        btn.onclick = changeSize;
+ 
+        function changeSize() {
+            for (let e of elems)
+                e.style.fontSize = params[index][0] + "pt";
+ 
+            btn.value = params[index][1] + " шрифт";
+            index = +!index; // Если было 0, то станет 1. Если было 1, то станет 0. 
+        }
+    </script>
+</body>
+</html>

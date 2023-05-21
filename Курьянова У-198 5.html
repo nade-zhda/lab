@@ -1,0 +1,27 @@
+<body>
+<script>
+
+var arr = [];
+str=prompt("Vvedite dlinnu massiva:");
+x=parseInt(str);
+k=0;
+for (var i=0; i<x; i++)
+{arr[i]=prompt("Vvedite znachenie elementa");}
+for (var i=0; i<x; i++)
+{
+if (arr[i]==",") {k++};
+}
+if (k==0) {
+alert("zapyatyh net");
+}
+for (var i=0; i<x; i++)
+{
+	if (arr[i]==",")
+{
+alert("naidena zapyataya pod indexom " +i);
+break;
+}
+};
+
+</script>
+</body>
